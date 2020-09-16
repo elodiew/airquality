@@ -14,6 +14,9 @@ import Admin from "@/components/pages/Admin";
 import Login from "@/components/pages/Login";
 import CreateAccount from "@/components/pages/CreateAccount";
 
+import imgHome from "@/assets/img/112.jpg";
+
+
 import "./assets/custom.scss";
 
 import {
@@ -28,14 +31,15 @@ Vue.config.productionTip = false;
 
 const routes = [{
     path: "/",
-    component: Home
+    component: Home,
+    meta: {
+      imageBg: imgHome
+    }
   },
   {
     path: "/admin",
     component: Admin,
-    meta: {
-      needAuth: true
-    }
+
   },
   {
     path: "/login",
@@ -46,6 +50,7 @@ const routes = [{
     component: CreateAccount
   }
 ];
+
 
 const router = new VueRouter({
   mode: "history",
@@ -60,6 +65,20 @@ router.beforeEach((to, from, next) => {
     next("/login");
   } else {
     next();
+  }
+});
+
+
+router.afterEach(to => {
+  if (to.meta && to.meta.imageBg) {
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "top";
+    document.body.style.backgroundSize = "3000px 2131px ",
+      document.body.style.backgroundImage = `url(${to.meta.imageBg})`;
+  } else {
+    document.body.style.backgroundRepeat = "";
+    document.body.style.backgroundPosition = "";
+    document.body.style.backgroundImage = "";
   }
 });
 

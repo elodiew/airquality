@@ -1,6 +1,8 @@
 <template>
-	<div>
-		<h1>Mesure de la qualité de l'air</h1>
+	<div class="container container-home">
+		<h1 class="title-home">
+			Mesure de la qualité de l'air, <br />ville par ville
+		</h1>
 		<div class="row">
 			<div v-for="city of cities" :key="city.index" class="col-sm-4">
 				<City :city="city" @deleteCity="deleteCityAction" />
@@ -68,4 +70,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.title-home {
+	color: white;
+	font-size: 4rem;
+}
+
+.container-home {
+	margin-top: 100px;
+}
+</style>
