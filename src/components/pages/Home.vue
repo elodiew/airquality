@@ -1,22 +1,25 @@
 <template>
 	<div>
-		<h1 class="title">Mesure de la qualité de l'air</h1>
+		<h1>Mesure de la qualité de l'air</h1>
 		<div class="row">
-			<div class="col-sm-4" v-for="city of cities" :key="city.index">
-				<City :city="city" @deleteCity="deleteCityAction"></City>
+			<div v-for="city of cities" :key="city.index" class="col-sm-4">
+				<City :city="city" @deleteCity="deleteCityAction" />
 			</div>
 		</div>
-		<CityForm @cityAddEvent="addCityAction"></CityForm>
-		<Alert v-if="showAlert" :type="typeAlert" :message="messageAlert"></Alert>
+
+		<CityForm @cityAddEvent="addCityAction" />
+
+		<Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" />
 	</div>
 </template>
 
 <script>
-import City from "@/components/City.vue";
-import CityForm from "@/components/CityForm.vue";
-import Alert from "@/components/Alert.vue";
-import { AirQualityService } from "@/services/AirQuality.service.js";
-import { CitiesService } from "@/services/Cities.service.js";
+import City from "@/components/City";
+import CityForm from "@/components/CityForm";
+import Alert from "@/components/Alert";
+
+import { AirQualityService } from "@/services/AirQuality.service";
+import { CitiesService } from "@/services/Cities.service";
 
 export default {
 	components: {
@@ -44,31 +47,25 @@ export default {
 					name: cityName,
 					iqa: null,
 				});
-				console.log(dataForNewCity);
 
 				this.typeAlert = "success";
 				this.messageAlert = "Ville ajoutée avec succès";
 				this.showAlert = true;
-				console.log("Success TYPE", this.typeAlert);
 			} else {
 				this.typeAlert = "warning";
 				this.messageAlert = "Ville non disponible";
 				this.showAlert = true;
-				console.log("Warning TYPE", this.typeAlert);
 			}
 		},
 		deleteCityAction(city) {
 			const indexToDelete = this.cities.findIndex(
 				(cityItem) => cityItem.name === city.name
 			);
+
 			this.cities.splice(indexToDelete, 1);
 		},
 	},
 };
 </script>
 
-<style lang="scss" scoped>
-.title {
-	color: white;
-}
-</style>
+<style lang="scss" scoped></style>

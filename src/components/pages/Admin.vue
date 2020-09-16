@@ -19,10 +19,10 @@
 				<b-button @click="addCityAction" class="primary">Ajouter</b-button>
 			</div>
 		</div>
-		<ul>
-			<li v-for="city of cities" :key="city.id">
-				{{ city.name }}
 
+		<ul>
+			<li v-for="city of cities" :key="city._id">
+				{{ city.name }} -
 				<b-button @click="deleteCity(city)">Supprimer</b-button>
 			</li>
 		</ul>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { CitiesService } from "@/services/Cities.service.js";
+import { CitiesService } from "@/services/Cities.service";
 
 export default {
 	data() {
@@ -45,15 +45,17 @@ export default {
 	methods: {
 		async addCityAction() {
 			const city = { name: this.newCity, iqa: 0 };
-			const idCity = CitiesService.addCity(city);
+			const idCity = await CitiesService.addCity(city);
 			city.id = idCity;
 			this.cities.push(city);
 		},
 		deleteCity(city) {
 			CitiesService.deleteCity(city);
+
 			const indexToDelete = this.cities.findIndex(
 				(cityItem) => city.id === cityItem.id
 			);
+
 			this.cities.splice(indexToDelete, 1);
 		},
 	},
