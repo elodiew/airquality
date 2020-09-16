@@ -4,6 +4,7 @@
 			<b-navbar-brand to="/">
 				<img src="https://zupimages.net/up/20/38/d4us.png" alt="logo" />
 			</b-navbar-brand>
+			<SelectLocale></SelectLocale>
 
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -11,15 +12,28 @@
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form>
-						<b-nav-item class="lang" href="#">FR</b-nav-item>
-						<b-nav-item class="lang" href="#">EN</b-nav-item>
+						<b-nav-item
+							@click="changeLang(i)"
+							v-bind:data="$i18n.locale"
+							class="lang"
+							href="#"
+							>FR</b-nav-item
+						>
+						<b-nav-item
+							@click="changeLang(i)"
+							v-bind:data="$i18n.locale"
+							class="lang"
+							href="#"
+							>EN</b-nav-item
+						>
+
 						<b-nav-item right>
 							<!-- Using 'button-content' slot -->
 							<b-button
 								type="submit"
 								class="btn primary button-navbar"
 								to="/admin"
-								>Connection</b-button
+								><div>{{ $t("message.connection") }}</div></b-button
 							>
 							<b-button
 								type="button"
@@ -29,6 +43,25 @@
 							>
 						</b-nav-item>
 					</b-nav-form>
+					<b-nav-item-dropdown>
+						<template slot="button-content">
+							<img
+								class="drapeau"
+								width="30px"
+								src="https://zupimages.net/up/20/38/9mdb.png"
+							/>
+						</template>
+						<b-dropdown-item
+							v-for="(lang, i) in langs"
+							v-bind:data="$i18n.locale"
+							v-bind:key="i"
+							style="display: inline"
+							@click="changeLang(i)"
+						>
+							<img class="drapeau" width="15px" src="" />
+							{{ lang }}
+						</b-dropdown-item>
+					</b-nav-item-dropdown>
 				</b-navbar-nav>
 			</b-collapse>
 		</b-navbar>
@@ -37,12 +70,27 @@
 
 <script>
 import { auth } from "@/firebase";
+import SelectLocale from "./SelectLocale.vue";
 
 export default {
 	data() {
 		return {
 			connected: false,
+			langs: {
+				fr: "Français",
+				en: "English",
+			},
+			locale: this.$i18n.locale,
 		};
+	},
+	components: {
+		SelectLocale,
+	},
+
+	beforeMount() {
+		this.$i18n.locale = localStorage.getItem("locale")
+			? localStorage.getItem("locale")
+			: "fr";
 	},
 	mounted() {
 		auth.onAuthStateChanged((user) => {
@@ -57,6 +105,10 @@ export default {
 		logout() {
 			auth.signOut();
 			this.$router.replace("/");
+		},
+		changeLang(lang) {
+			this.$i18n.locale = lang;
+			localStorage.setItem("locale", lang);
 		},
 	},
 };

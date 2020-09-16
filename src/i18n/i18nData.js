@@ -1,7 +1,10 @@
 // fr, en
 export default {
     fr: {
-        title_quality: "Mesure de la qualité de l'air, ville par ville",
+        message: {
+            connection: "Se Connecter !!!!!",
+        },
+
 
         title: {
             your_bookings: "Vos réservations",
@@ -26,7 +29,10 @@ export default {
 
     /************************ Anglais **************************/
     en: {
-        title_quality: "Air quality measurement, city by city",
+        message: {
+            connection: "Coonection!!!!!!",
+        },
+
 
         title: {
             your_bookings: "Your reservations",
