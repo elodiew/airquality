@@ -15,13 +15,12 @@ import Login from "@/components/pages/Login";
 import CreateAccount from "@/components/pages/CreateAccount";
 
 import imgHome from "@/assets/img/112.jpg";
-
-
 import "./assets/custom.scss";
-
+import i18n from './i18n/i18n'
 import {
   auth
 } from "@/firebase";
+
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
@@ -84,5 +83,6 @@ router.afterEach(to => {
 
 new Vue({
   render: h => h(App),
+  i18n,
   router
 }).$mount("#app");

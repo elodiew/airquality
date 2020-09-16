@@ -1,14 +1,5 @@
 <template>
   <div class="card-width">
-    <!-- <b-card :title="city.name" :class="color + ' cityCard'">
-			<b-card-text v-if="!loading">
-				Qualité de l'air : {{ city.iqa }}
-			</b-card-text>
-			<b-button @click="deleteCityAction" variant="secondary"
-				>Supprimer</b-button
-			>
-			<b-spinner v-if="loading" variant="primary" label="Spinning"></b-spinner>
-    </b-card>-->
     <b-card class="text-center" :title="city.name">
       <div class="text-center">
         <b-button v-if="!loading" class="button-supp">
@@ -16,8 +7,12 @@
           <b-badge variant="light" :class="color + ' cityCard'">{{ city.iqa }}</b-badge>
         </b-button>
       </div>
-      <b-button @click="deleteCityAction" variant="secondary">Supprimer</b-button>
-      <b-spinner v-if="loading" variant="primary" label="Spinning"></b-spinner>
+      <b-button
+        @click="deleteCityAction"
+        variant="outline-secondary"
+        class="outline-secondary"
+      >Supprimer</b-button>
+      <b-spinner v-if="loading" variant="light" label="Spinning"></b-spinner>
     </b-card>
   </div>
 </template>
@@ -120,5 +115,17 @@ export default {
 
 .card-width {
   width: 90%;
+}
+
+.outline-secondary {
+  margin-top: 5px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+}
+
+.outline-secondary:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
 }
 </style>

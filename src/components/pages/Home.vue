@@ -35,6 +35,9 @@ export default {
 			typeAlert: "",
 			messageAlert: "",
 			showAlert: false,
+			bindProps: {
+				defaultCountry: this.$i18n.locale,
+			},
 		};
 	},
 	async mounted() {
