@@ -1,14 +1,17 @@
 <template>
 	<div class="container container-home">
 		<h1 class="title-home">
-			Mesure de la qualité de l'air, <br />ville par ville
+			{{ $t("message.mesure_quality") }} <br />{{ $t("message.city_city") }}
 		</h1>
 		<div class="row">
 			<div v-for="city of cities" :key="city.index" class="col-sm-4">
 				<City :city="city" @deleteCity="deleteCityAction" />
 			</div>
 		</div>
-
+		<div class="col-md-6 col-12 text-white">
+			<h2>new h2</h2>
+			<p>{{ $t("message.welcomeMsg") }}</p>
+		</div>
 		<CityForm @cityAddEvent="addCityAction" />
 
 		<Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" />

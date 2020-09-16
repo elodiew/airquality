@@ -4,7 +4,6 @@
 			<b-navbar-brand to="/">
 				<img src="https://zupimages.net/up/20/38/d4us.png" alt="logo" />
 			</b-navbar-brand>
-			<SelectLocale></SelectLocale>
 
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -12,21 +11,14 @@
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form>
-						<b-nav-item
-							@click="changeLang(i)"
-							v-bind:data="$i18n.locale"
-							class="lang"
-							href="#"
-							>FR</b-nav-item
+						<b-nav-item right>
+							<a style="color: white" v-on:click="changeLocale('en')">FR</a>
+						</b-nav-item>
+						<b-nav-item right
+							><a style="color: white" v-on:click="changeLocale('fr')"
+								>EN</a
+							></b-nav-item
 						>
-						<b-nav-item
-							@click="changeLang(i)"
-							v-bind:data="$i18n.locale"
-							class="lang"
-							href="#"
-							>EN</b-nav-item
-						>
-
 						<b-nav-item right>
 							<!-- Using 'button-content' slot -->
 							<b-button
@@ -39,29 +31,10 @@
 								type="button"
 								class="btn primary button-navbar"
 								to="/create-account"
-								>Créer un compte</b-button
+								>{{ $t("message.create_account") }}</b-button
 							>
 						</b-nav-item>
 					</b-nav-form>
-					<b-nav-item-dropdown>
-						<template slot="button-content">
-							<img
-								class="drapeau"
-								width="30px"
-								src="https://zupimages.net/up/20/38/9mdb.png"
-							/>
-						</template>
-						<b-dropdown-item
-							v-for="(lang, i) in langs"
-							v-bind:data="$i18n.locale"
-							v-bind:key="i"
-							style="display: inline"
-							@click="changeLang(i)"
-						>
-							<img class="drapeau" width="15px" src="" />
-							{{ lang }}
-						</b-dropdown-item>
-					</b-nav-item-dropdown>
 				</b-navbar-nav>
 			</b-collapse>
 		</b-navbar>
@@ -70,28 +43,22 @@
 
 <script>
 import { auth } from "@/firebase";
-import SelectLocale from "./SelectLocale.vue";
+// import SelectLocale from "./SelectLocale.vue";
 
 export default {
 	data() {
 		return {
 			connected: false,
 			langs: {
-				fr: "Français",
-				en: "English",
+				fr: "FR",
+				en: "EN",
 			},
-			locale: this.$i18n.locale,
 		};
 	},
 	components: {
-		SelectLocale,
+		// SelectLocale,
 	},
 
-	beforeMount() {
-		this.$i18n.locale = localStorage.getItem("locale")
-			? localStorage.getItem("locale")
-			: "fr";
-	},
 	mounted() {
 		auth.onAuthStateChanged((user) => {
 			if (user) {
@@ -106,9 +73,12 @@ export default {
 			auth.signOut();
 			this.$router.replace("/");
 		},
-		changeLang(lang) {
-			this.$i18n.locale = lang;
-			localStorage.setItem("locale", lang);
+		changeLocale: function(locale) {
+			if (locale == "fr") {
+				this.$i18n.locale = "en";
+			} else {
+				this.$i18n.locale = "fr";
+			}
 		},
 	},
 };
@@ -149,5 +119,15 @@ export default {
 
 .navbar-light .navbar-nav .nav-link {
 	color: white !important;
+}
+
+.lang {
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	margin-left: auto;
+	margin-top: auto;
+	display: none;
 }
 </style>

@@ -2,7 +2,11 @@
 export default {
     fr: {
         message: {
-            connection: "Se Connecter !!!!!",
+            connection: "Se Connecter",
+            create_account: "Créer un compte",
+            mesure_quality: "Mesure de la qualité de l'air,",
+            city_city: "ville par ville",
+            welcomeMsg: "Coucou"
         },
 
 
@@ -30,7 +34,12 @@ export default {
     /************************ Anglais **************************/
     en: {
         message: {
-            connection: "Coonection!!!!!!",
+            connection: "Connection",
+            create_account: "Create account",
+            mesure_quality: "Air quality measurement,",
+            city_city: "city by city",
+            welcomeMsg: "Hello"
+
         },
 
 
