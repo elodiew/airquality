@@ -2,7 +2,7 @@
   <div class="card-width">
     <b-card class="text-center" :title="city.name">
       <div class="text-center">
-        <b-button v-if="!loading" class="button-supp">
+        <b-button v-if="!loading" class="button-qly">
           Qualité de l'air :
           <b-badge variant="light" :class="color + ' cityCard'">{{ city.iqa }}</b-badge>
         </b-button>
@@ -70,12 +70,9 @@ export default {
 }
 
 .button-supp {
-  text-decoration: none;
-  border-radius: 50px;
   padding: 10px 20px;
   font-size: 12px;
   line-height: 1rem;
-  font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 0.2rem;
@@ -85,6 +82,7 @@ export default {
   color: rgb(0, 0, 0);
   transition: all 0.4s ease-in-out 0s;
   margin: 5px;
+  font-family: "Questrial", sans-serif;
 }
 
 .button-supp:hover {
@@ -97,6 +95,33 @@ export default {
   color: rgb(60, 60, 255);
   border-color: white;
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.button-qly {
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out 0s;
+  margin: 5px;
+  font-family: "Questrial", sans-serif;
+}
+
+.button-qly:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.button-qly:focus {
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+  outline: none;
 }
 
 .btn .badge {
@@ -127,5 +152,6 @@ export default {
   color: black;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+  font-family: "Questrial", sans-serif;
 }
 </style>

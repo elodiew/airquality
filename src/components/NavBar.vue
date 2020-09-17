@@ -19,7 +19,15 @@
             </b-nav-item>
             <b-nav-item right>
               <!-- Using 'button-content' slot -->
-              <b-button type="submit" class="btn primary button-navbar" to="/admin">
+              <b-button
+                v-if="connected"
+                @click="logout"
+                type="submit"
+                class="btn primary button-navbar"
+              >
+                <div>Se déconnecter</div>
+              </b-button>
+              <b-button type="submit" class="btn primary button-navbar" to="/login">
                 <div>{{ $t("message.connection") }}</div>
               </b-button>
               <b-button
@@ -27,6 +35,9 @@
                 class="btn primary button-navbar"
                 to="/create-account"
               >{{ $t("message.create_account") }}</b-button>
+              <b-button class="btn primary button-navbar" to="/admin">
+                <div>{{ $t("message.admin") }}</div>
+              </b-button>
             </b-nav-item>
           </b-nav-form>
         </b-navbar-nav>
@@ -37,7 +48,6 @@
 
 <script>
 import { auth } from "@/firebase";
-// import SelectLocale from "./SelectLocale.vue";
 
 export default {
   data() {
@@ -49,9 +59,7 @@ export default {
       },
     };
   },
-  components: {
-    // SelectLocale,
-  },
+  components: {},
 
   mounted() {
     auth.onAuthStateChanged((user) => {
@@ -67,6 +75,7 @@ export default {
       auth.signOut();
       this.$router.replace("/");
     },
+
     changeLocale: function (locale) {
       if (locale == "fr") {
         this.$i18n.locale = "en";
@@ -88,7 +97,6 @@ export default {
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
-  user-select: none;
   letter-spacing: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
   text-align: center;
@@ -101,11 +109,38 @@ export default {
 
 .button-navbar:hover {
   background-color: rgb(255, 255, 255);
-
   color: rgb(60, 60, 255);
 }
 
 .button-navbar:focus {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 60, 255);
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.button-dropdown {
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  font-family: "Questrial", sans-serif;
+}
+
+.button-dropdown:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(60, 60, 255);
+}
+
+.button-dropdown:focus {
   background-color: rgb(255, 255, 255);
   color: rgb(60, 60, 255);
   border-color: white;
