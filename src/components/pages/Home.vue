@@ -9,14 +9,14 @@
 			</div>
 		</div>
 		<CityForm @cityAddEvent="addCityAction" />
-		<Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" />
+		<!-- <Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" /> -->
 	</div>
 </template>
 
 <script>
 import City from "@/components/City";
 import CityForm from "@/components/CityForm";
-import Alert from "@/components/Alert";
+// import Alert from "@/components/Alert";
 
 import { AirQualityService } from "@/services/AirQuality.service";
 import { CitiesService } from "@/services/Cities.service";
@@ -25,7 +25,7 @@ export default {
 	components: {
 		City,
 		CityForm,
-		Alert,
+		// Alert,
 	},
 	data() {
 		return {
@@ -48,15 +48,20 @@ export default {
 					iqa: null,
 				});
 
-				this.typeAlert = "success";
-				this.messageAlert = "Ville ajoutée avec succès";
-				this.showAlert = true;
+				this.$toastr.Add({
+					name: "Successcity",
+					msg: this.$t("message.succes_scity"),
+					type: "success",
+				});
 			} else {
-				this.typeAlert = "warning";
-				this.messageAlert = "Ville non disponible";
-				this.showAlert = true;
+				this.$toastr.Add({
+					name: "Errorcity",
+					msg: this.$t("message.error_city"),
+					type: "warning",
+				});
 			}
 		},
+
 		deleteCityAction(city) {
 			const indexToDelete = this.cities.findIndex(
 				(cityItem) => cityItem.name === city.name

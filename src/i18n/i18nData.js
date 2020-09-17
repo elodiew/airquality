@@ -8,7 +8,7 @@ export default {
             city_city: "ville par ville",
             welcomeMsg: "Coucou",
             succes_scity: "Ville ajoutée avec succès",
-            error_city: "Cette non disponible",
+            error_city: "Ville non disponible",
             admin: "Admin",
             deconnection: "Se déconnecter",
         },
@@ -44,6 +44,7 @@ export default {
             city_city: "city by city",
             welcomeMsg: "Hello",
             succes_scity: "Successful city",
+            error_city: "City not available",
             admin: "Admin",
             deconnection: "Disconnection",
 
