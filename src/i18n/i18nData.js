@@ -6,7 +6,9 @@ export default {
             create_account: "Créer un compte",
             mesure_quality: "Mesure de la qualité de l'air,",
             city_city: "ville par ville",
-            welcomeMsg: "Coucou"
+            welcomeMsg: "Coucou",
+            succes_scity: "Ville ajoutée avec succès",
+            error_city: "Cette non disponible"
         },
 
 
@@ -38,7 +40,9 @@ export default {
             create_account: "Create account",
             mesure_quality: "Air quality measurement,",
             city_city: "city by city",
-            welcomeMsg: "Hello"
+            welcomeMsg: "Hello",
+            succes_scity: "Successful city"
+
 
         },
 

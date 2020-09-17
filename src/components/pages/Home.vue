@@ -8,12 +8,7 @@
 				<City :city="city" @deleteCity="deleteCityAction" />
 			</div>
 		</div>
-		<div class="col-md-6 col-12 text-white">
-			<h2>new h2</h2>
-			<p>{{ $t("message.welcomeMsg") }}</p>
-		</div>
 		<CityForm @cityAddEvent="addCityAction" />
-
 		<Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" />
 	</div>
 </template>

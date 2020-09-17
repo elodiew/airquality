@@ -5,6 +5,7 @@ import {
   IconsPlugin
 } from "bootstrap-vue";
 import VueRouter from "vue-router";
+import VueToastr from "vue-toastr";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -25,6 +26,7 @@ import {
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
+Vue.use(VueToastr, {});
 
 Vue.config.productionTip = false;
 
@@ -84,5 +86,8 @@ router.afterEach(to => {
 new Vue({
   render: h => h(App),
   i18n,
-  router
+  router,
+  mounted() {
+    this.$toastr.defaultPosition = "toast-top-right";
+  }
 }).$mount("#app");
