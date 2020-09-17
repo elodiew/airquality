@@ -10,7 +10,6 @@
 				</div>
 			</div>
 			<CityForm @cityAddEvent="addCityAction" />
-			<!-- <Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" /> -->
 		</div>
 	</div>
 </template>

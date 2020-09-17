@@ -2,7 +2,7 @@
 	<div>
 		<b-navbar class="navbar" toggleable="lg" variant="faded" type="light">
 			<b-navbar-brand to="/">
-				<img src="https://zupimages.net/up/20/38/d4us.png" alt="logo" />
+				<img src="https://zupimages.net/up/20/38/wjhm.png" alt="logo" />
 			</b-navbar-brand>
 
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,7 +14,7 @@
 						<b-nav-item right>
 							<a
 								class="lang"
-								style="color: white"
+								style="color: black"
 								v-on:click="changeLocale('en')"
 								>FR</a
 							>
@@ -22,7 +22,7 @@
 						<b-nav-item right>
 							<a
 								class="lang"
-								style="color: white"
+								style="color: black"
 								v-on:click="changeLocale('fr')"
 								>EN</a
 							>
@@ -37,21 +37,7 @@
 							>
 								<div>Se déconnecter</div>
 							</b-button>
-							<b-button
-								v-on:click="isHidden = true"
-								v-if="!isHidden"
-								type="submit"
-								class="btn primary button-navbar"
-								to="/login"
-							>
-								<div>{{ $t("message.connection") }}</div>
-							</b-button>
-							<b-button
-								type="button"
-								class="btn primary button-navbar"
-								to="/create-account"
-								>{{ $t("message.create_account") }}</b-button
-							>
+
 							<b-button class="btn primary button-navbar" to="/admin">
 								<div>{{ $t("message.admin") }}</div>
 							</b-button>
@@ -88,6 +74,7 @@ export default {
 			}
 		});
 	},
+
 	methods: {
 		logout() {
 			auth.signOut();

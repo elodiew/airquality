@@ -11,7 +11,6 @@
 </template>
 
 <script>
-// import NavBar from "@/components/NavBar";
 const HeaderW_layout = "HeaderW";
 
 export default {

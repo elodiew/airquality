@@ -14,7 +14,7 @@
 						<b-nav-item right>
 							<a
 								class="lang"
-								style="color: white"
+								style="color: black"
 								v-on:click="changeLocale('en')"
 								>FR</a
 							>
@@ -22,7 +22,7 @@
 						<b-nav-item right>
 							<a
 								class="lang"
-								style="color: white"
+								style="color: black"
 								v-on:click="changeLocale('fr')"
 								>EN</a
 							>
@@ -37,13 +37,7 @@
 							>
 								<div>Se déconnecter</div>
 							</b-button>
-							<b-button
-								type="submit"
-								class="btn primary button-navbar"
-								to="/login"
-							>
-								<div>{{ $t("message.connection") }}</div>
-							</b-button>
+
 							<b-button
 								type="button"
 								class="btn primary button-navbar"
@@ -67,6 +61,7 @@ import { auth } from "@/firebase";
 export default {
 	data() {
 		return {
+			isHidden: false,
 			connected: false,
 			langs: {
 				fr: "FR",

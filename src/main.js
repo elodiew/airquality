@@ -18,9 +18,12 @@ import CreateAccount from "@/components/pages/CreateAccount";
 import imgHome from "@/assets/img/112.jpg";
 import HeaderW from "@/layouts/HeaderWhite.vue"
 import HeaderB from "@/layouts/HeaderBlack.vue"
+import HeaderCreataccount from "@/layouts/HeaderCreataccount.vue"
+
 
 Vue.component('HeaderW-layout', HeaderW);
 Vue.component('HeaderB-layout', HeaderB);
+Vue.component('HeaderCreataccount-layout', HeaderCreataccount);
 
 
 import "./assets/custom.scss";
@@ -65,7 +68,7 @@ const routes = [{
     path: "/create-account",
     component: CreateAccount,
     meta: {
-      layout: "HeaderB"
+      layout: "HeaderCreataccount"
     }
   }
 ];
