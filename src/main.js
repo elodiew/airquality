@@ -16,6 +16,13 @@ import Login from "@/components/pages/Login";
 import CreateAccount from "@/components/pages/CreateAccount";
 
 import imgHome from "@/assets/img/112.jpg";
+import HeaderW from "@/layouts/HeaderWhite.vue"
+import HeaderB from "@/layouts/HeaderBlack.vue"
+
+Vue.component('HeaderW-layout', HeaderW);
+Vue.component('HeaderB-layout', HeaderB);
+
+
 import "./assets/custom.scss";
 import i18n from './i18n/i18n'
 import {
@@ -34,24 +41,32 @@ const routes = [{
     path: "/",
     component: Home,
     meta: {
-      imageBg: imgHome
+      imageBg: imgHome,
+      layout: "HeaderW"
     }
   },
   {
     path: "/admin",
     component: Admin,
     meta: {
-      needAuth: true
+      needAuth: true,
+      layout: "HeaderB"
     }
 
   },
   {
     path: "/login",
-    component: Login
+    component: Login,
+    meta: {
+      layout: "HeaderB"
+    }
   },
   {
     path: "/create-account",
-    component: CreateAccount
+    component: CreateAccount,
+    meta: {
+      layout: "HeaderB"
+    }
   }
 ];
 

@@ -1,15 +1,17 @@
 <template>
-	<div class="container container-home">
-		<h1 class="title-home">
-			{{ $t("message.mesure_quality") }} <br />{{ $t("message.city_city") }}
-		</h1>
-		<div class="row">
-			<div v-for="city of cities" :key="city.index" class="col-sm-4">
-				<City :city="city" @deleteCity="deleteCityAction" />
+	<div>
+		<div class="container container-home">
+			<h1 class="title-home">
+				{{ $t("message.mesure_quality") }} <br />{{ $t("message.city_city") }}
+			</h1>
+			<div class="row">
+				<div v-for="city of cities" :key="city.index" class="col-sm-4">
+					<City :city="city" @deleteCity="deleteCityAction" />
+				</div>
 			</div>
+			<CityForm @cityAddEvent="addCityAction" />
+			<!-- <Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" /> -->
 		</div>
-		<CityForm @cityAddEvent="addCityAction" />
-		<!-- <Alert v-if="showAlert" :type="typeAlert" :message="messageAlert" /> -->
 	</div>
 </template>
 
@@ -38,6 +40,7 @@ export default {
 	async mounted() {
 		this.cities = await CitiesService.getCities();
 	},
+
 	methods: {
 		async addCityAction(cityName) {
 			const dataForNewCity = await AirQualityService.getAirQuality(cityName);

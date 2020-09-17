@@ -1,6 +1,9 @@
 <template>
 	<div id="app">
-		<NavBar></NavBar>
+		<component :is="layout">
+			<router-view></router-view>
+		</component>
+		<!-- <NavBar></NavBar> -->
 		<div class="container">
 			<router-view></router-view>
 		</div>
@@ -8,12 +11,18 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
+// import NavBar from "@/components/NavBar";
+const HeaderW_layout = "HeaderW";
 
 export default {
 	name: "App",
 	components: {
-		NavBar,
+		// NavBar,
+	},
+	computed: {
+		layout() {
+			return (this.$route.meta.layout || HeaderW_layout) + "-layout";
+		},
 	},
 };
 </script>
