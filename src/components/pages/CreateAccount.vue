@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1>Créer un compte</h1>
+		<h1>{{ $t("message.create_account") }}</h1>
 		<b-form @submit="submitAction">
 			<b-form-group label="Adresse email">
 				<b-form-input @change="initMessageError" v-model="email" type="email">
@@ -14,7 +14,9 @@
 					type="password"
 				/>
 			</b-form-group>
-			<b-button type="submit" variant="primary">Créer</b-button>
+			<b-button type="submit" variant="primary">{{
+				$t("message.create")
+			}}</b-button>
 
 			<b-alert show v-if="messageError" variant="danger">{{
 				messageError

@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="text-ville" style="text-align: center">
-						Ajouter une ville :
+						{{ $t("message.add_city") }}
 					</div>
 				</div>
 				<div class="col-6">
@@ -16,7 +16,9 @@
 					/>
 				</div>
 				<div class="col">
-					<b-button @click="addCityAction" class="validation">Ajouter</b-button>
+					<b-button @click="addCityAction" class="validation">{{
+						$t("message.add")
+					}}</b-button>
 				</div>
 			</div>
 		</div>
