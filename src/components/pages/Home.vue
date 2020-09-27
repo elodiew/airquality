@@ -1,17 +1,19 @@
 <template>
-	<div>
-		<div class="container container-home">
-			<h1 class="title-home">
-				{{ $t("message.mesure_quality") }} <br />{{ $t("message.city_city") }}
-			</h1>
-			<div class="row">
-				<div v-for="city of cities" :key="city.index" class="col-sm-4">
-					<City :city="city" @deleteCity="deleteCityAction" />
-				</div>
-			</div>
-			<CityForm @cityAddEvent="addCityAction" />
-		</div>
-	</div>
+  <div>
+    <div class="container" id="home">
+      <div class="container-home">
+        <h1 class="title-home">
+          {{ $t("message.mesure_quality") }} <br />{{ $t("message.city_city") }}
+        </h1>
+        <div class="row city-row">
+          <div v-for="city of cities" :key="city.index" class="col-sm-4">
+            <City :city="city" @deleteCity="deleteCityAction" />
+          </div>
+        </div>
+        <CityForm @cityAddEvent="addCityAction" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -23,65 +25,69 @@ import { AirQualityService } from "@/services/AirQuality.service";
 import { CitiesService } from "@/services/Cities.service";
 
 export default {
-	components: {
-		City,
-		CityForm,
-		// Alert,
-	},
-	data() {
-		return {
-			cities: [],
-			typeAlert: "",
-			messageAlert: "",
-			showAlert: false,
-		};
-	},
-	async mounted() {
-		this.cities = await CitiesService.getCities();
-	},
+  components: {
+    City,
+    CityForm,
+    // Alert,
+  },
+  data() {
+    return {
+      cities: [],
+      typeAlert: "",
+      messageAlert: "",
+      showAlert: false,
+    };
+  },
+  async mounted() {
+    this.cities = await CitiesService.getCities();
+  },
 
-	methods: {
-		async addCityAction(cityName) {
-			const dataForNewCity = await AirQualityService.getAirQuality(cityName);
+  methods: {
+    async addCityAction(cityName) {
+      const dataForNewCity = await AirQualityService.getAirQuality(cityName);
 
-			if (dataForNewCity !== "Unknown station") {
-				this.cities.push({
-					name: cityName,
-					iqa: null,
-				});
+      if (dataForNewCity !== "Unknown station") {
+        this.cities.push({
+          name: cityName,
+          iqa: null,
+        });
 
-				this.$toastr.Add({
-					name: "Successcity",
-					msg: this.$t("message.succes_scity"),
-					type: "success",
-				});
-			} else {
-				this.$toastr.Add({
-					name: "Errorcity",
-					msg: this.$t("message.error_city"),
-					type: "warning",
-				});
-			}
-		},
+        this.$toastr.Add({
+          name: "Successcity",
+          msg: this.$t("message.succes_scity"),
+          type: "success",
+        });
+      } else {
+        this.$toastr.Add({
+          name: "Errorcity",
+          msg: this.$t("message.error_city"),
+          type: "warning",
+        });
+      }
+    },
 
-		deleteCityAction(city) {
-			const indexToDelete = this.cities.findIndex(
-				(cityItem) => cityItem.name === city.name
-			);
+    deleteCityAction(city) {
+      const indexToDelete = this.cities.findIndex(
+        (cityItem) => cityItem.name === city.name
+      );
 
-			this.cities.splice(indexToDelete, 1);
-		},
-	},
+      this.cities.splice(indexToDelete, 1);
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 .title-home {
-	color: white;
-	font-size: 4rem;
+  color: white;
+  font-size: 4rem;
 }
 
 .container-home {
-	margin-top: 100px;
+  margin-top: 150px;
+}
+
+.city-row {
+  margin-top: 80px;
 }
 </style>

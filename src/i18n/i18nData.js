@@ -15,7 +15,9 @@ export default {
             air_quality: "Qualité de l'air:",
             remove_city: "Supprimer",
             add_city: "Ajouter une ville :",
-            add: "Ajouter"
+            add: "Ajouter",
+            address_mail: "Adresse email",
+            password: "Mot de passe"
 
 
         },
@@ -58,7 +60,11 @@ export default {
             air_quality: "Air quality:",
             remove_city: "Remove",
             add_city: "Add a city:",
-            add: "Add"
+            add: "Add",
+            address_mail: "Adress email",
+            password: "Password"
+
+
 
 
 
