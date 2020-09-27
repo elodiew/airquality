@@ -19,7 +19,6 @@
 <script>
 import City from "@/components/City";
 import CityForm from "@/components/CityForm";
-// import Alert from "@/components/Alert";
 
 import { AirQualityService } from "@/services/AirQuality.service";
 import { CitiesService } from "@/services/Cities.service";
@@ -28,7 +27,6 @@ export default {
   components: {
     City,
     CityForm,
-    // Alert,
   },
   data() {
     return {

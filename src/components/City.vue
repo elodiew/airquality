@@ -136,14 +136,6 @@ export default {
 .card {
   margin-bottom: 20px;
   opacity: 0.8;
-  //   -moz-box-shadow: 5px 5px 2px 0px #656565;
-  //   -webkit-box-shadow: 5px 5px 2px 0px #656565;
-  //   -o-box-shadow: 5px 5px 2px 0px #656565;
-  //   box-shadow: 5px 5px 2px 0px #656565;
-  //   filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=2);
-  //   -moz-border-radius: 10px;
-  //   -webkit-border-radius: 10px;
-  //   border-radius: 10px;
 }
 
 .card-body {
