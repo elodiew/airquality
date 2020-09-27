@@ -90,4 +90,10 @@ export default {
 .city-row {
   margin-top: 80px;
 }
+
+@media screen and (max-width: 767px) {
+  .container-home {
+    margin-top: 10px;
+  }
+}
 </style>

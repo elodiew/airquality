@@ -166,4 +166,10 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
   font-family: "Questrial", sans-serif;
 }
+
+@media screen and (max-width: 767px) {
+  .card-width {
+    width: 100%;
+  }
+}
 </style>

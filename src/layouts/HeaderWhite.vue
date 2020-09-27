@@ -1,11 +1,14 @@
 <template>
   <div>
-    <b-navbar class="navbar" toggleable="lg" variant="faded" type="light">
+    <b-navbar class="navbar navbar-light" toggleable="lg" variant="faded">
       <b-navbar-brand to="/">
         <img src="https://zupimages.net/up/20/38/d4us.png" alt="logo" />
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle
+        target="nav-collapse"
+        class="custom-toggler"
+      ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
@@ -165,11 +168,7 @@ export default {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: white !important;
-}
-
-.lang {
-  font-family: "Questrial", sans-serif;
+.custom-toggler.navbar-toggler {
+  border-color: rgb(29, 170, 229);
 }
 </style>
