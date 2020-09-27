@@ -17,16 +17,10 @@ export default {
             add_city: "Ajouter une ville :",
             add: "Ajouter",
             address_mail: "Adresse email",
-            password: "Mot de passe"
-
+            password: "Mot de passe",
+            remove: "Supprimer"
 
         },
-
-
-        // title: {
-        //     your_bookings: "Vos réservations",
-
-        // },
 
         // btn: {
         //     to_come: "À venir",
@@ -35,8 +29,6 @@ export default {
 
         // footer: {
         //     air_quality: {
-        //         title: 'Utilisez l\'application ',
-        //         content: 'Réservez vos créneaux et organisez vos matchs, trouvez des partenaires de jeux,..',
         //         ios: 'https://',
         //         android: 'https://',
         //     },
@@ -61,20 +53,13 @@ export default {
             remove_city: "Remove",
             add_city: "Add a city:",
             add: "Add",
-            address_mail: "Adress email",
-            password: "Password"
-
-
-
-
-
+            address_mail: "Adress mail",
+            password: "Password",
+            remove: "Delete"
 
         },
 
 
-        // title: {
-        //     your_bookings: "Your reservations",
-        // },
 
         // btn: {
         //     to_come: "To come up",
@@ -82,8 +67,6 @@ export default {
 
         // footer: {
         //     air_quality: {
-        //         title: 'Use  App',
-        //         content: 'Book your slot and manage your game, find new partners,..',
         //         ios: 'https',
         //         android: 'https',
         //     },
