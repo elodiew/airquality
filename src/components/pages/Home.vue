@@ -59,7 +59,7 @@ export default {
 			typeAlert: '',
 			messageAlert: '',
 			showAlert: false,
-			limitRow: 5,
+			limitRow: 7,
 			showAll: false,
 		};
 	},
