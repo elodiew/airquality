@@ -29,20 +29,27 @@
 								>{{ $t('message.deconnection') }}</b-dropdown-item
 							>
 							<b-dropdown-item
-								v-on:click="isHidden = true"
-								v-if="!isHidden"
+								v-if="!connected"
 								type="submit"
 								class="btn primary"
 								to="/login"
 								>{{ $t('message.connection') }}</b-dropdown-item
 							>
 							<b-dropdown-item
+								v-if="!connected"
 								type="button"
 								class="btn primary"
 								to="/create-account"
 								>{{ $t('message.create_account') }}</b-dropdown-item
 							>
+							<b-dropdown-item
+								v-if="connected"
+								class="btn primary"
+								to="/admin"
+								>{{ $t('message.admin') }}</b-dropdown-item
+							>
 						</b-dropdown>
+
 						<!--End First Dropdown-->
 
 						<!--Start Two Dropdown-->
