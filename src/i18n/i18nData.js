@@ -18,7 +18,9 @@ export default {
             add: "Ajouter",
             address_mail: "Adresse email",
             password: "Mot de passe",
-            remove: "Supprimer"
+            remove: "Supprimer",
+            show_all: "Afficher plus",
+            show_less: "Afficher moins"
 
         },
 
@@ -55,7 +57,9 @@ export default {
             add: "Add",
             address_mail: "Adress mail",
             password: "Password",
-            remove: "Delete"
+            remove: "Delete",
+            show_all: "Show more",
+            show_less: "Show less"
 
         },
 

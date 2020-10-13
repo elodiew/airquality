@@ -23,7 +23,7 @@
 					v-on:click="showAllAction()"
 					v-if="showAll === false"
 				>
-					Afficher plus
+					{{ $t('message.show_all') }}
 				</button>
 
 				<!-- Show Less button-->
@@ -32,7 +32,7 @@
 					v-on:click="showAll = !showAll"
 					v-if="showAll === true"
 				>
-					Afficher moins
+					{{ $t('message.show_less') }}
 				</button>
 
 				<CityForm @cityAddEvent="addCityAction" />
