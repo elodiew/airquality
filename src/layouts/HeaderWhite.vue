@@ -42,10 +42,6 @@
 								to="/create-account"
 								>{{ $t('message.create_account') }}</b-dropdown-item
 							>
-
-							<!-- <b-dropdown-item class="btn primary" to="/admin">{{
-								$t('message.admin')
-							}}</b-dropdown-item> -->
 						</b-dropdown>
 						<!--End First Dropdown-->
 

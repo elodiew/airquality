@@ -8,7 +8,7 @@
 				<div class="row city-row">
 					<!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
 					<div
-						class="col-sm-4"
+						class="col-sm-3"
 						v-if="(cities && index > limitRow && showAll) || index <= limitRow"
 						v-for="(city, index) in cities"
 						:key="index"
