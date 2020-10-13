@@ -142,12 +142,14 @@ export default {
 	font-family: 'Questrial', sans-serif;
 }
 
-.button-navbar:hover {
+.showallBooking:hover,
+.showlessBooking:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(60, 60, 255);
 }
 
-.button-navbar:focus {
+.showallBooking:focus,
+.showlessBooking:focus {
 	background-color: rgb(255, 255, 255);
 	color: rgb(60, 60, 255);
 	border-color: white;

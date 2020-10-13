@@ -24,3 +24,94 @@ h6,
 .btn {
     font-family: "Questrial", sans-serif;
 }
+
+.btn-secondary {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 11px;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease-in-out 0s;
+    margin: 5px;
+    font-family: 'Questrial',
+    sans-serif;
+}
+
+.btn-secondary:hover {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 11px;
+    line-height: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+    text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+    transition: all 0.4s ease-in-out 0s;
+    margin: 5px;
+    font-family: 'Questrial',
+        sans-serif;
+}
+
+.btn-secondary:focus {
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 11px;
+    line-height: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+    text-align: center;
+    background-color:  #1daae5;
+	color: #ffffff;
+    transition: all 0.4s ease-in-out 0s;
+    margin: 5px;
+    font-family: 'Questrial',
+        sans-serif;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #1daae5;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.dropdown-item:hover {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #1daae5;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: white;
+    border: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-secondary:hover {
+                border-radius: 50px;
+    }
+    .btn-secondary {
+        border-radius: 50px;
+        max-height: 40px;
+    }
+}

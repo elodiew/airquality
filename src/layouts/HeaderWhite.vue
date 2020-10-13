@@ -14,52 +14,57 @@
 				<!-- Right aligned nav items -->
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form>
-						<b-nav-item right>
-							<a
-								class="lang"
-								style="color: white"
-								v-on:click="changeLocale('en')"
-								>FR
-							</a>
-						</b-nav-item>
-						<b-nav-item right>
-							<a
-								class="lang"
-								style="color: white"
-								v-on:click="changeLocale('fr')"
-							>
-								/EN</a
-							>
-						</b-nav-item>
-						<b-nav-item right>
-							<!-- Using 'button-content' slot -->
-							<b-button
+						<!--Start First Dropdown-->
+						<b-dropdown
+							right
+							id="dropdown-1"
+							:text="$t('message.account')"
+							class="m-md-2"
+						>
+							<b-dropdown-item
 								v-if="connected"
 								@click="logout"
 								type="submit"
-								class="btn primary button-navbar"
+								class="btn primary"
+								>{{ $t('message.deconnection') }}</b-dropdown-item
 							>
-								<div>{{ $t('message.deconnection') }}</div>
-							</b-button>
-							<b-button
+							<b-dropdown-item
 								v-on:click="isHidden = true"
 								v-if="!isHidden"
 								type="submit"
-								class="btn primary button-navbar"
+								class="btn primary"
 								to="/login"
+								>{{ $t('message.connection') }}</b-dropdown-item
 							>
-								<div>{{ $t('message.connection') }}</div>
-							</b-button>
-							<b-button
+							<b-dropdown-item
 								type="button"
-								class="btn primary button-navbar"
+								class="btn primary"
 								to="/create-account"
-								>{{ $t('message.create_account') }}</b-button
+								>{{ $t('message.create_account') }}</b-dropdown-item
 							>
-							<b-button class="btn primary button-navbar" to="/admin">
-								<div>{{ $t('message.admin') }}</div>
-							</b-button>
-						</b-nav-item>
+
+							<!-- <b-dropdown-item class="btn primary" to="/admin">{{
+								$t('message.admin')
+							}}</b-dropdown-item> -->
+						</b-dropdown>
+						<!--End First Dropdown-->
+
+						<!--Start Two Dropdown-->
+						<b-dropdown right id="dropdown-2" text="Lang" class="m-md-2">
+							<b-dropdown-item
+								class="lang"
+								style="color: white"
+								v-on:click="changeLocale('en')"
+								>FR</b-dropdown-item
+							>
+							<b-dropdown-item
+								class="lang"
+								style="color: white"
+								v-on:click="changeLocale('fr')"
+								>EN</b-dropdown-item
+							>
+						</b-dropdown>
+						<!--End Two Dropdown-->
 					</b-nav-form>
 				</b-navbar-nav>
 			</b-collapse>

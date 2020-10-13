@@ -2,7 +2,7 @@
 export default {
     fr: {
         message: {
-            connection: "Se Connecter",
+            connection: "Se connecter",
             create_account: "Créer un compte",
             mesure_quality: "Mesure de la qualité de l'air,",
             city_city: "ville par ville",
@@ -20,7 +20,9 @@ export default {
             password: "Mot de passe",
             remove: "Supprimer",
             show_all: "Afficher plus",
-            show_less: "Afficher moins"
+            show_less: "Afficher moins",
+            user: "Utilisateur",
+            account: "Compte"
 
         },
 
@@ -59,7 +61,9 @@ export default {
             password: "Password",
             remove: "Delete",
             show_all: "Show more",
-            show_less: "Show less"
+            show_less: "Show less",
+            user: "User",
+            account: "Account"
 
         },
 

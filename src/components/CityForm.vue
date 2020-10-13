@@ -20,7 +20,7 @@
 					<b-button
 						v-on:keyup.enter="addCityAction"
 						@click="addCityAction"
-						class="validation"
+						class="btn-secondary validate"
 						>{{ $t('message.add') }}</b-button
 					>
 				</div>
@@ -83,9 +83,14 @@ export default {
 	margin-top: 50px;
 }
 
-.validation {
-	color: #1daae5;
-	background-color: transparent;
+.validate {
+	padding: 15px 20px;
+	margin: -5px;
+}
+.validate:hover {
+	padding: 15px 20px;
+	margin: -5px;
+	font-weight: bold;
 }
 
 .form-control {
