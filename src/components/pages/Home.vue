@@ -59,7 +59,7 @@ export default {
 			typeAlert: '',
 			messageAlert: '',
 			showAlert: false,
-			limitRow: 8,
+			limitRow: 5,
 			showAll: false,
 		};
 	},
@@ -117,20 +117,41 @@ export default {
 
 .city-row {
 	margin-top: 80px;
+	margin-bottom: 50px;
 }
 
 .showallBooking,
 .showlessBooking {
 	width: 100%;
-	max-width: 300px;
-	font-size: 20px;
-	display: block;
-	text-align: center;
-	margin: auto;
-	padding: 6px 0 6px 0;
-	border: none;
-	margin-top: 10px;
+	max-width: 200px;
+	text-decoration: none;
 	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	transition: all 0.4s ease-in-out 0s;
+	margin: auto;
+	font-family: 'Questrial', sans-serif;
+}
+
+.button-navbar:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+}
+
+.button-navbar:focus {
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+	border-color: white;
+	box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
 @media screen and (max-width: 767px) {
