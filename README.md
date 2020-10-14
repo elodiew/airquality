@@ -1,6 +1,8 @@
 # air quality
 
-[![Website Elodie Dev girl](https://img.shields.io/badge/Website-visit-brightgreen)](https://air-quality.elodie-devgirl.com/) [![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers) ![GitHub repo size](https://img.shields.io/github/repo-size/elodiew/airquality)
+[![Website Elodie Dev girl](https://img.shields.io/badge/Website-visit-brightgreen)](https://air-quality.elodie-devgirl.com/) ![GitHub repo size](https://img.shields.io/github/repo-size/elodiew/airquality)<br>
+
+[![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers) 
 
 
 
