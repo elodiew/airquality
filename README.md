@@ -25,8 +25,6 @@ Demo like this : (https://air-quality.elodie-devgirl.com/)
 * 🐙 Github
 * 💻 VS Code
 
-## Projet en ligne ici => (https://air-quality.elodie-devgirl.com/)
-
 ## Project setup
 ```
 npm install
@@ -46,6 +44,22 @@ npm run build
 ```
 npm run lint
 ```
+<!-- USAGE EXAMPLES -->
+## Usage
+
+How to use the app?
+
+_For more examples, please refer to the [Documentation](https://github.com/elodiew/airquality/wiki)_
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@moret_elodie](https://twitter.com/moret_elodie) - email
+
+Project Link: [https://github.com/elodiew/airquality](https://github.com/elodiew/airquality)
+
+
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)](https://vuejs.org/) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://developer.mozilla.org/fr/docs/Web/HTML) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://developer.mozilla.org/fr/docs/Web/CSS)<br>
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/elodiew/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/elodiew/)<br>
