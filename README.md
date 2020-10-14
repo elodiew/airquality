@@ -11,8 +11,9 @@
 
 `elodiew`, `https://github.com/elodiew/airquality`
 
-<!-- ABOUT THE PROJECT -->
-Air quality app.<br>
+<!-- USAGE -->
+## Usage
+
 Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
 Find out about the real-time air quality for each city you want to add. <br>
 Demo like this : (https://air-quality.elodie-devgirl.com/)
