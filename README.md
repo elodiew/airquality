@@ -1,6 +1,7 @@
 # air quality
 
-[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/)<br>
+[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/).[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers)
+
 
 Home Page Air Quality
 ![Home Page Air Quality](https://zupimages.net/up/20/39/ubgc.jpg)
