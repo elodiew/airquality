@@ -9,7 +9,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-  * [For Who ?](#for-who)
+  * [Intro](#intro)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -35,8 +35,8 @@
 * [Vue i18n](https://www.npmjs.com/package/vue-i18n)
 * [Webpack](https://webpack.js.org/)
 
-<!-- For who ? -->
-## For who ?
+<!-- Intro -->
+## Intro
 
 Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
 Find out about the real-time air quality for each city you want to add. <br>
