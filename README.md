@@ -1,6 +1,6 @@
 # air quality
 
-[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
+[![Contributors][contributors-shield]][https://github.com/elodiew/airquality/stargazers] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
 
 ## Projet en ligne ici => (https://air-quality.elodie-devgirl.com/)
 
