@@ -2,7 +2,11 @@
 	<div>
 		<b-navbar class="navbar navbar-light" toggleable="lg" variant="faded">
 			<b-navbar-brand to="/">
-				<img src="https://zupimages.net/up/20/38/d4us.png" alt="logo" />
+				<img
+					src="https://zupimages.net/up/20/38/d4us.png"
+					alt="logo"
+					style="width: 200px; height: 80px"
+				/>
 			</b-navbar-brand>
 
 			<b-navbar-toggle
@@ -118,6 +122,69 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btn-secondary {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:hover {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+	transition: all 0.4s ease-in-out 0s;
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:focus {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: #1daae5;
+	color: #ffffff;
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+	color: #1daae5;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
 .button-navbar {
 	text-decoration: none;
 	border-radius: 50px;

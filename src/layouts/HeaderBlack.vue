@@ -110,6 +110,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+	color: #1daae5;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
 .button-navbar {
 	text-decoration: none;
 	border-radius: 50px;

@@ -162,7 +162,7 @@ export default {
 }
 
 .card {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	opacity: 0.8;
 }
 

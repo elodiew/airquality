@@ -15,7 +15,7 @@ import Admin from "@/components/pages/Admin";
 import Login from "@/components/pages/Login";
 import CreateAccount from "@/components/pages/CreateAccount";
 
-import imgHome from "@/assets/img/112.jpg";
+import imgHome from "@/assets/img/cities3.jpg";
 import HeaderW from "@/layouts/HeaderWhite.vue"
 import HeaderB from "@/layouts/HeaderBlack.vue"
 import HeaderCreataccount from "@/layouts/HeaderCreataccount.vue"
@@ -94,8 +94,9 @@ router.beforeEach((to, from, next) => {
 router.afterEach(to => {
   if (to.meta && to.meta.imageBg) {
     document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "top";
-    document.body.style.backgroundSize = "3000px 2131px ",
+    document.body.style.backgroundPosition = "center";
+    // document.body.style.backgroundSize = "3000px 2131px ",
+    document.body.style.backgroundSize = "cover ",
       document.body.style.backgroundImage = `url(${to.meta.imageBg})`;
   } else {
     document.body.style.backgroundRepeat = "";

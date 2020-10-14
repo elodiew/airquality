@@ -5,10 +5,12 @@
 				<h1 class="title-home">
 					{{ $t('message.mesure_quality') }} <br />{{ $t('message.city_city') }}
 				</h1>
+
+				<CityForm @cityAddEvent="addCityAction" />
 				<div class="row city-row">
 					<!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
 					<div
-						class="col-sm-3"
+						class="col-sm-4"
 						v-if="(cities && index > limitRow && showAll) || index <= limitRow"
 						v-for="(city, index) in cities"
 						:key="index"
@@ -34,8 +36,6 @@
 				>
 					{{ $t('message.show_less') }}
 				</button>
-
-				<CityForm @cityAddEvent="addCityAction" />
 			</div>
 		</div>
 	</div>
@@ -112,7 +112,7 @@ export default {
 }
 
 .container-home {
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
 .city-row {

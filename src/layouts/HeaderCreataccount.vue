@@ -16,7 +16,7 @@
 							right
 							id="dropdown-1"
 							:text="$t('message.account')"
-							class="m-md-2"
+							class=".btn-secondary m-md-2"
 						>
 							<b-dropdown-item
 								v-if="connected"
@@ -33,16 +33,6 @@
 								to="/login"
 								>{{ $t('message.connection') }}</b-dropdown-item
 							>
-							<!-- <b-dropdown-item
-								type="button"
-								class="btn primary"
-								to="/create-account"
-								>{{ $t('message.create_account') }}</b-dropdown-item
-							> -->
-
-							<!-- <b-dropdown-item class="btn primary" to="/admin">{{
-								$t('message.admin')
-							}}</b-dropdown-item> -->
 						</b-dropdown>
 						<!--End First Dropdown-->
 
@@ -113,6 +103,69 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btn-secondary {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:hover {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+	transition: all 0.4s ease-in-out 0s;
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:focus {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: #1daae5;
+	color: #ffffff;
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+	color: #1daae5;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
 .button-navbar {
 	text-decoration: none;
 	border-radius: 50px;

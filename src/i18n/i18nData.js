@@ -43,7 +43,7 @@ export default {
     /************************ Anglais **************************/
     en: {
         message: {
-            connection: "Connection",
+            connection: "Login",
             create_account: "Create account",
             mesure_quality: "Air quality measurement,",
             city_city: "city by city",

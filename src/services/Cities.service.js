@@ -20,6 +20,7 @@ export const CitiesService = {
     async addCity(city) {
         const result = await citiesRef.add(city);
         return result.id;
+        
     },
     deleteCity(city) {
         const citiesRefDelete = citiesRef.doc(city.id);

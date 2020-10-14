@@ -20,7 +20,7 @@
 					<b-button
 						v-on:keyup.enter="addCityAction"
 						@click="addCityAction"
-						class="btn-secondary validate"
+						class="validate"
 						>{{ $t('message.add') }}</b-button
 					>
 				</div>
@@ -91,6 +91,58 @@ export default {
 	padding: 15px 20px;
 	margin: -5px;
 	font-weight: bold;
+}
+
+.btn-secondary {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: #007bff;
+	color: #ffffff;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:hover {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+	transition: all 0.4s ease-in-out 0s;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary:focus {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: #ffffff;
+	color: rgb(60, 60, 255);
+	font-family: 'Questrial', sans-serif;
 }
 
 .form-control {

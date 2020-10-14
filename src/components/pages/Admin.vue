@@ -82,11 +82,9 @@ h1 {
 }
 
 .validation {
-	color: #1daae5;
-	background-color: transparent;
 	text-decoration: none;
 	border-radius: 50px;
-	padding: 10px 20px;
+	padding: 10px 15px;
 	font-size: 11px;
 	line-height: 1rem;
 	font-weight: 700;
@@ -95,8 +93,51 @@ h1 {
 	letter-spacing: 0.2rem;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
 	text-align: center;
-	transition: all 0.4s ease-in-out 0s;
+	background-color: #007bff;
+	color: #ffffff;
 	font-family: 'Questrial', sans-serif;
+}
+
+.validation:hover {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(60, 60, 255);
+	font-family: 'Questrial', sans-serif;
+}
+
+.validation:focus {
+	text-decoration: none;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0.8rem 1.6rem 0px;
+	text-align: center;
+	background-color: #ffffff;
+	color: #ffffff;
+	margin: 5px;
+	font-family: 'Questrial', sans-serif;
+}
+
+.btn-secondary {
+	margin: 0px;
+}
+.btn-secondary:hover {
+	margin: 0px;
 }
 
 .suppression {
