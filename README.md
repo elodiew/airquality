@@ -1,4 +1,4 @@
-# air quality
+# Application Air Quality
 
 [![Website Elodie Dev girl](https://img.shields.io/badge/Website-visit-brightgreen)](https://air-quality.elodie-devgirl.com/) ![GitHub repo size](https://img.shields.io/github/repo-size/elodiew/airquality) ![GitHub top language](https://img.shields.io/github/languages/top/elodiew/airquality)<br>
 
