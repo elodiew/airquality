@@ -1,6 +1,6 @@
 # air quality
 
-[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/).[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers)
+[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/).[![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers)
 
 
 Home Page Air Quality
