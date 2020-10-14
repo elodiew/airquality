@@ -21,9 +21,18 @@ Demo like this : (https://air-quality.elodie-devgirl.com/)
 
 ### Built With
 
-* 🖊️ Markdown
-* 🐙 Github
-* 💻 VS Code
+* 🐙[Github](https://github.com/)
+* [Vuejs](https://vuejs.org/)
+* [BootstrapVue](https://bootstrap-vue.org/)
+* [VS Code](https://code.visualstudio.com/)
+* [Axios](https://www.npmjs.com/package/vue-axios)
+* [Firebase](https://firebase.google.com/)
+* [Vue i18n](https://www.npmjs.com/package/vue-i18n)
+
+
+
+
+
 
 ## Project setup
 ```
