@@ -6,8 +6,7 @@
 
 ### About the projet
 
-Home Page & App Air Quality 
-![Home Page Air Quality](https://zupimages.net/viewer.php?id=20/42/df6e.jpg)
+![Home Page Air Quality](https://zupimages.net/up/20/42/df6e.jpg)
 
 
 `elodiew`, `https://github.com/elodiew/airquality`, 
