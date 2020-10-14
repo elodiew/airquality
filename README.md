@@ -1,6 +1,6 @@
 # air quality
 
-[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/).[![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers)[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/elodiew/)
+[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/).[![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers)
 
 
 
@@ -37,5 +37,4 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/elodiew/)
