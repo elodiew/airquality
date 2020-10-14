@@ -1,5 +1,7 @@
 # air quality
 
+[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
+
 ## Projet en ligne ici => (https://air-quality.elodie-devgirl.com/)
 
 ## Project setup
