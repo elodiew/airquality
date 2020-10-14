@@ -11,8 +11,8 @@
 
 `elodiew`, `https://github.com/elodiew/airquality`
 
-<!-- USAGE -->
-## Usage
+<!-- For who ? -->
+## For who ?
 
 Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
 Find out about the real-time air quality for each city you want to add. <br>
@@ -50,7 +50,7 @@ npm run build
 ```
 npm run lint
 ```
-<!-- USAGE EXAMPLES -->
+<!-- USAGE  -->
 ## Usage
 
 How to use the app?
