@@ -4,6 +4,11 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers) ![GitHub User's stars](https://img.shields.io/github/stars/elodiew?style=social) <br>
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Application Air Quality][App-screenshot]](https://zupimages.net/up/20/42/df6e.jpg)
+
 ### About the projet
 
 ![Home Page Air Quality](https://zupimages.net/up/20/42/df6e.jpg)
