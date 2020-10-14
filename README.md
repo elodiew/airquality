@@ -1,5 +1,6 @@
 # air quality
 
+[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 `elodiew`, `https://github.com/elodiew/airquality`, 
 
 <!-- ABOUT THE PROJECT -->
