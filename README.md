@@ -3,7 +3,6 @@
 `elodiew`, `https://github.com/elodiew/airquality`, 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
 ## Projet en ligne ici => (https://air-quality.elodie-devgirl.com/)
 
