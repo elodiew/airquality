@@ -18,7 +18,8 @@ Do you want to go on vacation and find out what the air quality is in the city o
 Find out about the real-time air quality for each city you want to add. <br>
 Demo like this : (https://air-quality.elodie-devgirl.com/)
 
-### Built With
+<!-- BUILD WITH -->
+## Built With
 
 * 🐙 [Github](https://github.com/)
 * [Vuejs](https://vuejs.org/)
