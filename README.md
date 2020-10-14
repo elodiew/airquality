@@ -8,8 +8,8 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* [Intro](#intro)
   * [Built With](#built-with)
-  * [Intro](#intro)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -21,7 +21,12 @@
 
 ![Home Page Air Quality](https://zupimages.net/up/20/42/df6e.jpg)
 
-`elodiew`, `https://github.com/elodiew/airquality`
+<!-- Intro -->
+## Intro
+
+Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
+Find out about the real-time air quality for each city you want to add. <br>
+Demo like this : (https://air-quality.elodie-devgirl.com/)
 
 <!-- BUILD WITH -->
 ## Built With
@@ -35,12 +40,6 @@
 * [Vue i18n](https://www.npmjs.com/package/vue-i18n)
 * [Webpack](https://webpack.js.org/)
 
-<!-- Intro -->
-## Intro
-
-Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
-Find out about the real-time air quality for each city you want to add. <br>
-Demo like this : (https://air-quality.elodie-devgirl.com/)
 
 <!--getting-started-->
 ## Getting started
