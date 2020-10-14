@@ -4,19 +4,24 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers) ![GitHub User's stars](https://img.shields.io/github/stars/elodiew?style=social) <br>
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+  * [For Who ?](#for-who)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 ![Home Page Air Quality](https://zupimages.net/up/20/42/df6e.jpg)
 
 `elodiew`, `https://github.com/elodiew/airquality`
-
-<!-- For who ? -->
-## For who ?
-
-Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
-Find out about the real-time air quality for each city you want to add. <br>
-Demo like this : (https://air-quality.elodie-devgirl.com/)
 
 <!-- BUILD WITH -->
 ## Built With
@@ -30,8 +35,18 @@ Demo like this : (https://air-quality.elodie-devgirl.com/)
 * [Vue i18n](https://www.npmjs.com/package/vue-i18n)
 * [Webpack](https://webpack.js.org/)
 
+<!-- For who ? -->
+## For who ?
 
-## Project setup
+Do you want to go on vacation and find out what the air quality is in the city of your choice ? <br>
+Find out about the real-time air quality for each city you want to add. <br>
+Demo like this : (https://air-quality.elodie-devgirl.com/)
+
+<!--getting-started-->
+## Getting started
+<!--installation-->
+## installation
+
 ```
 npm install
 ```
