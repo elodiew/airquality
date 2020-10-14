@@ -37,7 +37,7 @@ npm run build
 npm run lint
 ```
 
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/elodiew/)***[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/elodiew/)<br>
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/elodiew/)-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/elodiew/)<br>
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)](https://forthebadge.com)-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
