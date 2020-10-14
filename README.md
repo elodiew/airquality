@@ -1,6 +1,7 @@
 # air quality
 
-[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![Website Azur Web Design](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://air-quality.elodie-devgirl.com/)<br>
+
 `elodiew`, `https://github.com/elodiew/airquality`, 
 
 <!-- ABOUT THE PROJECT -->
