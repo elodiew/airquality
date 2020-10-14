@@ -4,11 +4,10 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/elodiew.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elodiew?tab=followers) ![GitHub User's stars](https://img.shields.io/github/stars/elodiew?style=social) <br>
 
-Home Page Air Quality
-![Home Page Air Quality](https://zupimages.net/up/20/39/ubgc.jpg)
+### About the projet
 
-APP Air Quality
-![APP Air Quality](https://zupimages.net/up/20/39/tkdx.jpg)
+Home Page & App Air Quality 
+![Home Page Air Quality](https://zupimages.net/viewer.php?id=20/42/df6e.jpg)
 
 
 `elodiew`, `https://github.com/elodiew/airquality`, 
