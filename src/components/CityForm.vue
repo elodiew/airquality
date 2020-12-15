@@ -40,6 +40,7 @@ export default {
 		addCityAction() {
 			if (this.newCity) {
 				this.$emit('cityAddEvent', this.newCity);
+				this.newCity = '';
 			}
 		},
 	},

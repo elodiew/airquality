@@ -54,6 +54,7 @@ export default {
 			const idCity = await CitiesService.addCity(city);
 			city.id = idCity;
 			this.cities.push(city);
+			this.newCity = '';
 		},
 		deleteCity(city) {
 			CitiesService.deleteCity(city);

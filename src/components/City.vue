@@ -40,13 +40,17 @@ export default {
 		this.loading = true;
 		const infosCity = await AirQualityService.getAirQuality(this.city.name);
 		this.loading = false;
-
-		this.city.iqa = infosCity.aqi;
+		if (infosCity === undefined) {
+			this.city.iqa = 0;
+		} else {
+			this.city.iqa = infosCity.aqi;
+		}
 
 		if (this.city.iqa <= 30) this.color = 'pollution-faible';
 		if (this.city.iqa > 30 && this.city.iqa <= 50)
 			this.color = 'pollution-medium';
 		if (this.city.iqa > 50) this.color = 'pollution-forte';
+		if (this.city.iqa == 0) this.color = 'aucune-pollution';
 	},
 	methods: {
 		deleteCityAction() {
@@ -69,6 +73,11 @@ export default {
 
 .pollution-forte {
 	background: rgb(184, 5, 5);
+	color: white;
+}
+
+.aucune-pollution {
+	background: #000000;
 	color: white;
 }
 
