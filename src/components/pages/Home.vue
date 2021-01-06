@@ -65,6 +65,7 @@ export default {
 	},
 	async mounted() {
 		this.cities = await CitiesService.getCities();
+		console.log('Welcome 👾');
 	},
 
 	methods: {
@@ -96,7 +97,7 @@ export default {
 
 		deleteCityAction(city) {
 			const indexToDelete = this.cities.findIndex(
-				(cityItem) => cityItem.name === city.name
+				(cityItem) => cityItem.name === city.name,
 			);
 
 			this.cities.splice(indexToDelete, 1);
