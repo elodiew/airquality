@@ -1,12 +1,16 @@
 <template>
 	<div>
 		<b-modal
+			hide-footer
 			id="modal-lg"
 			size="lg"
 			title="À propos de la mesure de la qualité de l'air et de la pollution:
 "
 			>À propos des niveaux de qualité de l'air
 			<b-table hover :items="items"></b-table>
+			<b-button class="mt-3" block @click="$bvModal.hide('modal-lg')"
+				>Close Me</b-button
+			>
 		</b-modal>
 	</div>
 </template>
@@ -18,7 +22,7 @@ export default {
 			items: [
 				{
 					AQI: '0-30',
-					AirPollutionLevel: 'Bonne',
+					NiveauDePollutionAtmosphérique: 'Bonne',
 					ImplicationsSanitaires:
 						"La qualité de l'air est considérée comme satisfaisante et la pollution de l'air pose peu ou pas de risque",
 					MiseEnGarde: 'Aucune',
@@ -26,7 +30,7 @@ export default {
 				},
 				{
 					AQI: '31-50',
-					AirPollutionLevel: 'Modérer',
+					NiveauDePollutionAtmosphérique: 'Modérer',
 					ImplicationsSanitaires:
 						'Les membres de groupes sensibles peuvent subir des effets sur la santé. Le grand public ne sera probablement pas affecté.',
 					MiseEnGarde:
@@ -35,7 +39,7 @@ export default {
 				},
 				{
 					AQI: '51-100',
-					AirPollutionLevel: 'Mauvaise',
+					NiveauDePollutionAtmosphérique: 'Mauvaise',
 					ImplicationsSanitaires:
 						'Tout le monde peut commencer à ressentir des effets sur la santé; les membres de groupes sensibles peuvent subir des effets plus graves sur la santé',
 					_rowVariant: 'danger',
