@@ -36,6 +36,8 @@
 				>
 					{{ $t('message.show_less') }}
 				</button>
+
+				<ModalPollution></ModalPollution>
 			</div>
 		</div>
 	</div>
@@ -47,11 +49,13 @@ import CityForm from '@/components/CityForm';
 
 import { AirQualityService } from '@/services/AirQuality.service';
 import { CitiesService } from '@/services/Cities.service';
+import ModalPollution from '../ModalPollution.vue';
 
 export default {
 	components: {
 		City,
 		CityForm,
+		ModalPollution,
 	},
 	data() {
 		return {

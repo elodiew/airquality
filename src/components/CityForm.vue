@@ -36,6 +36,7 @@ export default {
 			newCity: null,
 		};
 	},
+
 	methods: {
 		addCityAction() {
 			if (this.newCity) {

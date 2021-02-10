@@ -19,6 +19,9 @@
 				<b-navbar-nav class="ml-auto">
 					<b-nav-form>
 						<!--Start First Dropdown-->
+						<b-button v-b-modal.modal-lg variant="primary"
+							>En savoir plus sur la qualité de l'air</b-button
+						>
 						<b-dropdown
 							right
 							id="dropdown-1"
